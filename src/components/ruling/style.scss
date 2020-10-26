@@ -21,13 +21,13 @@
 	}
 
 	&__bg {
-    background-attachment: scroll;
-    background-color: transparent;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0, transparent 60%);
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
+		background-attachment: scroll;
+		background-color: transparent;
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0, transparent 60%);
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		z-index: 0;
 	}
 
 	&__majority {
@@ -75,10 +75,10 @@
 	}
 
 	&__description {
-    margin-left: 40px;
-    color: $color-white;
-    position: relative;
-    padding-right: 4rem;
+		margin-left: 40px;
+		color: $color-white;
+		position: relative;
+		padding-right: 4rem;
 		
 		h4 {
 			font-weight: 400;
@@ -87,19 +87,19 @@
 		}
 	}
 	&__actions {
-    display: flex;
-    width: 100%;
-    position: relative;
-    height: 80px;
-    padding-left: 40px;
+		display: flex;
+		width: 100%;
+		position: relative;
+		height: 80px;
+		padding-left: 40px;
 	}
 
 	
 	&__actions-vote {
 		border: none;
 		height: 40px;
-    margin-right: 1rem;
-    width: 40px;
+		margin-right: 1rem;
+		width: 40px;
 		
 		&--up {
 			background-color: $color-turquise;
@@ -121,41 +121,41 @@
 	}
 
 	&__actions-vote-icon {
-    width: 25px;
-    height: 25px;
-    content: url(../../assets/images/thumbsxs.png);
+		width: 25px;
+		height: 25px;
+		content: url(../../assets/images/thumbsxs.png);
 	}
 
 	&__cast-vote {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 1px solid $color-white;
-    color: white;
-    cursor: pointer;
-    height: 40px;
-    outline: none;
-    overflow: hidden;
-    text-align: center;
-    vertical-align: middle;
-    width: 100px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: 1px solid $color-white;
+		color: white;
+		cursor: pointer;
+		height: 40px;
+		outline: none;
+		overflow: hidden;
+		text-align: center;
+		vertical-align: middle;
+		width: 100px;
 	}
 
 	
 	&__current {
 		position: relative;
-    display: grid;
-    grid-template-columns: 64% 36%;
-    height: 50px;
-    width: 100%;
+		display: grid;
+		grid-template-columns: 64% 36%;
+		height: 50px;
+		width: 100%;
 	}
 
 	&__thumbs {
-    align-items: center;
-    color: $color-white;
-    display: flex;
-    font-size: 2rem;
-    height: 50px;
-    opacity: 0.9;
+		align-items: center;
+		color: $color-white;
+		display: flex;
+		font-size: 2rem;
+		height: 50px;
+		opacity: 0.9;
 
 		&--up {
 			background-color: $color-turquise;
@@ -168,17 +168,14 @@
 		}
 	}
 
-	&__icons {
-	}
-
 	&__icons-up {
-    content: url(../../assets/images/thumbssm.png);
+		content: url(../../assets/images/thumbssm.png);
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 
 	&__icons-down {
-    content: url(../../assets/images/thumbsdownsm.png);
+		content: url(../../assets/images/thumbsdownsm.png);
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}

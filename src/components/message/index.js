@@ -8,10 +8,10 @@ import './style.scss';
 import xicon from '../../assets/images/xicon.png';
 
 const Message = ({
-		className,
-		title,
-		titleHighLight,
-		content
+	className,
+	title,
+	titleHighLight,
+	content
 	}) => {
 	const [visible, setVisible] = useState(true);
 
@@ -19,7 +19,7 @@ const Message = ({
 		return null;
 	}
 
-  return (
+	return (
 		<article className={`message ${className}`}>
 			<div className="message__title">
 				<h1>{title}</h1>
@@ -38,7 +38,6 @@ const Message = ({
 			</div>
 		</article>
 	);
-
 };
 
 Message.propTypes = {
