@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables.scss';
+
+.navigation {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  &__title {
+    color: $color-white;
+    font-family: Lato;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: flex;
+    justify-self: end;
+    margin-left: auto;
+  }
+
+  &__nav-item {
+    color: $color-white;
+    margin-right: 3em;
+    text-decoration: none;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+};

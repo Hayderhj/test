@@ -1,0 +1,152 @@
+
+@import '../../assets/scss/variables.scss';
+
+.hero {
+color: $color-white;
+  &__pope-bg {
+    align-items: flex-end;
+    background-color: $color-white;
+    background-image: url(../../assets/images/pope-francis.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    left: 0;
+    max-height: 1024px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+ }
+ 
+ &__bg-gradient {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0, transparent 60%);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 33vh;
+  z-index: -1;
+ }
+
+ &__content {
+	align-items: flex-end;
+	display: flex;
+	height: 100vh;
+	padding-bottom: 14rem;
+	padding-top: 5rem;
+	max-height: 1024px;
+ }
+
+ &__ruling {
+  width: 500px;
+  height: 500px;
+ }
+
+ &__ruling-head {
+  height: 370px;
+  position: relative;
+}
+
+&__ruling-bg {
+  background-color: $color-gray;
+  filter: blur(2px);
+  height: 100%;
+  opacity: 0.451;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero__ruling-content {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 6rem;
+}
+
+.pre-title {
+  display: block;
+}
+
+.title {
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+&__ruling-description {
+  display: block;
+  font-size: 1.2rem;
+}
+
+&__ruling-more-info {
+  text-decoration: underline;
+  margin-bottom: 3rem;
+
+  a {
+    color: $color-white;
+  }
+}
+
+&__vote-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+&__thumbs {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  opacity: 0.8;
+
+  &--up {
+    background-color: $color-turquise;
+  }
+
+  &--down {
+    background-color: $color-soft-yellow;
+    transform: rotate(180deg);
+  }
+
+}
+
+&__remaining-days {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
+  max-height: 70px;
+  width: 100%;
+
+  &--closing {
+    align-items: center;
+    background-color: $color-soft-gray;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    opacity: 0.5;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  &--days {
+    align-items: center;
+    background-color: $color-white;
+    color: $color-four-six;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: flex-start;
+    opacity: 0.5;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  
+}
+
+}

@@ -1,0 +1,185 @@
+@import '../../assets/scss/variables.scss';
+
+.ruling {
+	&__main {
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		height: 650px;
+		justify-content: flex-end;
+		margin-bottom: 2rem;
+		position: relative;
+		width: 585px;
+	}
+
+	&__header {
+		display: grid;
+		grid-template-columns: 40px 1fr;
+		margin-bottom: 1rem;
+		position: relative;
+		width: 100%;
+	}
+
+	&__bg {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0, transparent 60%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+	}
+
+	&__majority {
+		align-items: center;
+		align-self: end;
+		display: flex;
+		height: 40px;
+		justify-content: center;
+		margin-bottom: 10px;
+		width: 40px;
+		
+		&--up {
+			background-color: $color-turquise;
+		}
+
+		&--down {
+			background-color: $color-soft-yellow;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__majority-icon {
+		width: 25px;
+		height: 25px;
+    content: url(../../assets/images/thumbsxs.png);
+	}
+
+	&__title {
+		color: $color-white;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+
+	&__time-ago {
+		color: $color-white;
+		position: relative;
+		width: 100%;
+
+		h5 {
+			font-weight: 400;
+			margin-left: 40px;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__description {
+    margin-left: 40px;
+    color: $color-white;
+    position: relative;
+    padding-right: 4rem;
+		
+		h4 {
+			font-weight: 400;
+			font-size: 1.3rem;
+			margin-top: 0;
+		}
+	}
+	&__actions {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    padding-left: 40px;
+	}
+
+	
+	&__actions-vote {
+		border: none;
+		height: 40px;
+    margin-right: 1rem;
+    width: 40px;
+		
+		&--up {
+			background-color: $color-turquise;
+		}
+
+		&--down {
+			background-color: $color-soft-yellow;
+			transform: rotate(180deg);
+		}
+
+		&--selected {
+			border: 2px solid;
+			border-color: white;
+		}
+
+		&:focus {
+			outline:0;
+		}
+	}
+
+	&__actions-vote-icon {
+    width: 25px;
+    height: 25px;
+    content: url(../../assets/images/thumbsxs.png);
+	}
+
+	&__cast-vote {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid $color-white;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+	}
+
+	
+	&__current {
+		position: relative;
+    display: grid;
+    grid-template-columns: 64% 36%;
+    height: 50px;
+    width: 100%;
+	}
+
+	&__thumbs {
+    align-items: center;
+    color: $color-white;
+    display: flex;
+    font-size: 2rem;
+    height: 50px;
+    opacity: 0.9;
+
+		&--up {
+			background-color: $color-turquise;
+			justify-content: flex-start;
+		}		
+		
+		&--down {
+			background-color: $color-soft-yellow;
+			justify-content: flex-end;
+		}
+	}
+
+	&__icons {
+	}
+
+	&__icons-up {
+    content: url(../../assets/images/thumbssm.png);
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	&__icons-down {
+    content: url(../../assets/images/thumbsdownsm.png);
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./assets/fonts/lato/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: local('LatoBold'), url(./assets/fonts/lato/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src: local('LatoLight'), url(./assets/fonts/lato/Lato-Light.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: LatoLight, Lato, LatoBold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}

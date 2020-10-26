@@ -1,0 +1,17 @@
+.rulings {
+  &__title {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1440px) {
+	.rulings {
+		justify-content: space-between;
+	}
+}
